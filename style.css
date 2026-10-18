@@ -1,0 +1,242 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f4f6f9;
+  color: #202124;
+  line-height: 1.5;
+}
+
+/* 1. Navbar Styling */
+.navbar {
+  max-width: 1100px;
+  margin: 20px auto;
+  background-color: #9cc6d1;
+  padding: 14px 24px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(162, 111, 184, 0.06);
+}
+
+.logo {
+  font-size: 16px;
+}
+
+.gdg-symbol {
+  color: #3b78e7;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #202124;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  color: #3b78e7;
+}
+
+.iiit-btn {
+  background-color: #3b78e7;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.iiit-btn:hover {
+  background-color: #2a65d4;
+}
+
+/* 2. Main Container & Hero Section */
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 60px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.small-tag {
+  font-size: 13px;
+  font-weight: bold;
+  color: #5f6368;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #4d5156;
+  margin-bottom: 25px;
+}
+
+.event-details {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.detail-badge {
+  background-color: #e4e8ee;
+  padding: 10px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+/* 3. Registration Form Card */
+.form-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-card h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #dadce0;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #3b78e7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #2a65d4;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* 4. What to Expect Section */
+.expect-section {
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #4d5156;
+}
+
+/* 5. Footer */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.quote {
+  font-family: Georgia, serif;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.credit {
+  font-size: 14px;
+  color: #5f6368;
+}
+
+/* 6. Mobile Responsiveness (For Phone Screens) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 20px;
+    margin: 15px;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text h1 {
+    font-size: 38px;
+  }
+
+  .form-card {
+    width: 100%;
+  }
+
+  .cards-container {
+    flex-direction: column;
+  }
+}

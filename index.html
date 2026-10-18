@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GDG on Campus - IIIT Kalyani</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <span class="gdg-symbol">&lt; &gt;</span>
+        <b>GDG on Campus</b> • IIIT Kalyani
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#highlights">Highlights</a></li>
+      </ul>
+
+      <a href="https://iiitkalyani.ac.in" target="_blank" class="iiit-btn">
+        IIIT Kalyani &#8599;
+      </a>
+    </nav>
+  </header>
+
+  <!-- 2. Main Content Container -->
+  <main class="container">
+
+    <!-- Hero Section (Left: Event Info, Right: Form) -->
+    <section id="about" class="hero">
+      
+      <!-- Left Box -->
+      <div class="hero-text">
+        <p class="small-tag">UPCOMING EVENT • IIIT KALYANI 2026</p>
+        <h1>LEARN. BUILD.<br> CONNECT.</h1>
+        <p class="subtitle">
+          Explore technology, learn new skills, and meet fellow developers at IIIT Kalyani's premier Google Developer Groups flagship event.
+        </p>
+
+        <div id="schedule" class="event-details">
+          <span class="detail-badge">📅 <b>Date:</b> To be confirmed</span>
+          <span class="detail-badge">📍 <b>Venue:</b> IIIT Kalyani</span>
+        </div>
+      </div>
+
+      <!-- Right Box (Registration Form) -->
+      <div class="form-card">
+        <h2>Register Your Interest</h2>
+
+        <form id="regForm">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <input type="text" id="branch" placeholder="Your Branch (e.g. CSE, ECE)" required>
+          <button type="submit" class="submit-btn">Register Now &rarr;</button>
+        </form>
+
+        <!-- Message shown after submitting the form -->
+        <p id="successMsg" class="success-message"></p>
+      </div>
+
+    </section>
+
+    <!-- 3. What to Expect Section -->
+    <section id="highlights" class="expect-section">
+      <h2 class="section-heading">WHAT TO EXPECT</h2>
+
+      <div class="cards-container">
+        <div class="card">
+          <h3>Tech Talks</h3>
+          <p>Sessions on Web Development, Cloud, and AI/ML by senior developers.</p>
+        </div>
+
+        <div class="card">
+          <h3>Hands-on Learning</h3>
+          <p>Live coding workshops where you build real projects from scratch.</p>
+        </div>
+
+        <div class="card">
+          <h3>Networking</h3>
+          <p>Meet seniors and batchmates to team up for hackathons and projects.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. Footer -->
+  <footer class="footer">
+    <p class="quote"><i>Walk in with curiosity. Leave with code.</i></p>
+    <p class="credit">Made with ❤️ by GDG on Campus, IIIT Kalyani.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
